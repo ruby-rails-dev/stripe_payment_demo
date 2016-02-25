@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 #    root 'products#index'
     root 'subscriptions#index'
 
-    post 'stripe_checkout' => 'product#stripe_checkout'
+   
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
