@@ -52,20 +52,7 @@ class ProductsController < ApplicationController
     end
   end
 
-def buy_product
-end
-  def stripe_checkout
-  @amount = 10
-  
-  charge = Stripe::Charge.create(
-                  :amount => @amount * 100,
-                  :currency => "usd",
-                  :source => params[:stripeToken],
-                  :description => "Test Charge"
-  )
-  flash[:notice] = "Successfully created a charge"
-  redirect_to '/product'
-end
+
 
   # DELETE /products/1
   # DELETE /products/1.json
