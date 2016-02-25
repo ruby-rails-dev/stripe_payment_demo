@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @subscription.email %>
+</p>
+
+<p>
+  <strong>Full name:</strong>
+  <%= @subscription.full_name %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @subscription.company %>
+</p>
+
+<p>
+  <strong>Stripe customer token:</strong>
+  <%= @subscription.stripe_customer_token %>
+</p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @subscription.product %>
+</p>
+
+<%= link_to 'Edit', edit_subscription_path(@subscription) %> |
+<%= link_to 'Back', subscriptions_path %>
